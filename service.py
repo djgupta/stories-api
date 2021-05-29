@@ -46,7 +46,6 @@ def create_image_story(data, file):
         'file_type' : data.get('file_type'),
         'latitude' : data.get('latitude'),
         'longitude' : data.get('longitude'),
-        'system_timestamp' : datetime.now(),
         'original_filename' : original_file_name,
         'file_extension' : extension,
         'file_name' : file_name,

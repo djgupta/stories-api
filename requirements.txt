@@ -2,4 +2,3 @@ Flask
 pytest
 moviepy
 gunicorn
-bson

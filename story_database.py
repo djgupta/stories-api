@@ -1,7 +1,6 @@
 from datetime import datetime
 import sqlite3
 import json
-from bson import json_util
 import configuration
 
 conn = None
@@ -16,7 +15,7 @@ def get_db():
 
 def insert(story):
     c = get_db().cursor()
-    return c.execute("insert into stories values (?, ?, ?)", [story['story_id'], json.dumps(story, default=json_util.default), datetime.now()])
+    return c.execute("insert into stories values (?, ?, ?)", [story['story_id'], json.dumps(story), datetime.now()])
 
 def get_all():
     c = get_db().cursor()
