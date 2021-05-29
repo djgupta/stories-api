@@ -4,7 +4,7 @@ All the images and video are resized into compressed format. \
 Once a story is created, story_id is sent to a queue and queue is being continuously read for image and video **compression** \
 Application has unit tests written in **pytest**. \
 Application is written in **python** using **flask** framework and uses **sqlite3** as database \
-API is deployed on *heroku**: http://story-api-dj.herokuapp.com
+API is deployed on **heroku**: http://story-api-dj.herokuapp.com
 
 ## Design
 This application has following APIs: \
